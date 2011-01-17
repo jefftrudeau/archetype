@@ -1,0 +1,29 @@
+{
+  name: 'archetype',
+  version: '0.0.1',
+  author: 'Jeff Trudeau <jeff.trudeau@gmail.com>',
+  contributors: [],
+  bin: { archetype: './cli.js' },
+//  bugs: {},
+  dependencies: { sequelize: '>=0.4.3' },
+  description: 'A web framework leveraging Node.js',
+//  directories: {},
+  engines: { node: '>=0.3.5-pre' },
+  homepage: '',
+  licenses: [ { type: 'GPL v2', url: 'http://www.gnu.org/licenses/gpl-2.0.txt' } ],
+  main: '',
+//  man: {},
+  modules: {
+    common: './lib/common',
+    database: './lib/database',
+    log: './lib/log',
+    option: './lib/option',
+    route: './lib/route',
+    server: './lib/server',
+    service: './lib/service',
+    template: './lib/template'
+  },
+//  overlay: {},
+  repository: { type: 'git', url: 'http://github.com/jefftrudeau/archetype.git' },
+//  scripts: {}
+}
