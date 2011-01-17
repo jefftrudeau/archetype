@@ -5,3 +5,21 @@ Released under the GNU General Public License, version 2.
   http://www.gnu.org/licenses/gpl-2.0.txt
 
 Copyright (C) Jeff Trudeau
+
+----------------
+To get started:
+
+# install archetype
+npm install archetype
+
+# create a project
+archetype create-project myproject
+
+# create a module
+cd myproject
+archetype create-module mymodule
+
+# start the server
+node server.js
+
+# visit http://127.0.0.1:8192/mymodule to see the example page
