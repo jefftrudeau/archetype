@@ -3,14 +3,14 @@
 , "author": "Jeff Trudeau <jeff.trudeau@gmail.com>"
 , "bin": { "archetype": "./cli.js" }
 , "dependencies":
-  { "optimist": "0.1.x"
-  , "sequelize": "0.4.x"
+  { "optimist": ">=0.1"
+  , "sequelize": ">=0.4"
   }
 , "description": "A web framework leveraging Node.js"
 , "directories": { "lib": "./lib" }
 , "engines":
-  { "node": "0.5.x"
-  , "npm": "1.0.x"
+  { "node": ">=0.5.0-pre <0.6"
+  , "npm": ">=1 <1.1"
   }
 , "licenses":
   [ { "type": "GPL v2"
