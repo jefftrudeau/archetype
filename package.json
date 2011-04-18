@@ -1,21 +1,25 @@
-{
-  "name": "archetype",
-  "version": "0.0.3",
-  "author": "Jeff Trudeau <jeff.trudeau@gmail.com>",
-  "bin": { "archetype": "./cli.js" },
-  "dependencies": { "sequelize": ">=0.4.3" },
-  "description": "A web framework leveraging Node.js",
-  "engines": { "node": ">=0.2.6  <=0.3.5-pre" },
-  "licenses": [ { "type": "GPL v2", "url": "http://www.gnu.org/licenses/gpl-2.0.txt" } ],
-  "modules": {
-    "common": "./lib/common",
-    "database": "./lib/database",
-    "log": "./lib/log",
-    "option": "./lib/option",
-    "route": "./lib/route",
-    "server": "./lib/server",
-    "service": "./lib/service",
-    "template": "./lib/template"
-  },
-  "repository": { "type": "git", "url": "http://github.com/jefftrudeau/archetype.git" }
+{ "name": "archetype"
+, "version": "0.0.4"
+, "author": "Jeff Trudeau <jeff.trudeau@gmail.com>"
+, "bin": { "archetype": "./cli.js" }
+, "dependencies":
+  { "optimist": "~0.1.9"
+  , "sequelize": "~0.4.3"
+  }
+, "description": "A web framework leveraging Node.js"
+, "directories": { "lib": "./lib" }
+, "engines":
+  { "node": "~0.5.0-pre"
+  , "npm": "~1.0.1rc9"
+  }
+, "licenses":
+  [ { "type": "GPL v2"
+    , "url": "http://www.gnu.org/licenses/gpl-2.0.txt"
+    }
+  ]
+, "main": "./archetype.js"
+, "repository":
+  { "type": "git"
+  , "url": "http://github.com/jefftrudeau/archetype.git"
+  }
 }
