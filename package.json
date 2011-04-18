@@ -5,7 +5,7 @@
   "bin": { "archetype": "./cli.js" },
   "dependencies": { "sequelize": ">=0.4.3" },
   "description": "A web framework leveraging Node.js",
-  "engines": { "node": ">=0.3.5-pre" },
+  "engines": { "node": ">=0.2.6  <=0.3.5-pre" },
   "licenses": [ { "type": "GPL v2", "url": "http://www.gnu.org/licenses/gpl-2.0.txt" } ],
   "modules": {
     "common": "./lib/common",
