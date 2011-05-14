@@ -3,8 +3,8 @@
 , "author": "Jeff Trudeau <jeff.trudeau@gmail.com>"
 , "bin": { "archetype": "./cli.js" }
 , "dependencies":
-  { "optimist": ">=0.1"
-  , "sequelize": ">=0.4"
+  { "nMemcached": "<=0.1"
+  , "optimist": "<=0.1"
   }
 , "description": "A web framework leveraging Node.js"
 , "directories": { "lib": "./lib" }

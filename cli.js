@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-var common = require('./archetype').common,
-    opt = require('optimist'),
-    pwd = process.env.PWD,
-    util = require('util');
+var common = require('./archetype').common
+  , opt = require('optimist')
+  , pwd = process.env.PWD
+  , util = require('util');
 
 var create_dir = function (path) {
   console.log('creating directory: '+path);
