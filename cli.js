@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 var common = require('./archetype').common
   , opt = require('optimist')
   , pwd = process.env.PWD
@@ -17,15 +18,14 @@ var create_file = function (src, dst, re, str) {
 var commands = {
 
   create_module: function (name, others) {
-    ['model', 'route', 'service'].forEach(function (e, i) {
+    ['route', 'service'].forEach(function (e, i) {
       create_file(__dirname+'/lib/module/'+e+'.js', pwd+'/'+e+'s/'+name+'.js', /%MODULE%/g, name);
     });
-    create_file(__dirname+'/lib/module/template.html', pwd+'/templates/'+name+'_index.html', '', '');
   },
 
   create_project: function (name, others) {
     create_dir(pwd+'/'+name);
-    ['models', 'routes', 'services', 'templates'].forEach(function (e, i) {
+    ['routes', 'services'].forEach(function (e, i) {
       create_dir(pwd+'/'+name+'/'+e);
     });
     ['option', 'server'].forEach(function (e, i) {
@@ -49,9 +49,9 @@ var commands = {
     opt.usage(
 'archetype: command-line interface to the archetype web framework for Node.js\n' +
 'Usage:\n' +
-'    $0 [ options ] [ action ]\n' +
-'Options: []\n' +
+'    $0 [ action ] < options >\n' +
 'Actions: [ create-project PROJECT ]\n' +
-'         [ create-module MODULE ]\n'
-    ).demandCount(min).demand(['A valid action is required.']);
+'         [ create-module MODULE ]\n' +
+'Options: []\n'
+    ).demand(['Please enter a valid command.']);
 })();
