@@ -8,10 +8,11 @@
  * Copyright (C) Jeff Trudeau
  */
 
-this.cache = require('./lib/cache').cache;
 this.common = require('./lib/common');
 this.log = require('./lib/log').log;
+this.memcache = require('./lib/memcache').memcache;
 this.option = require('./lib/option').option;
+this.redis = require('./lib/redis').redis;
 this.route = require('./lib/route').route;
 this.server = require('./lib/server').server;
 this.service = require('./lib/service').service;
